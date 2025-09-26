@@ -34,6 +34,11 @@ function main(ev) {
 		// ใช้ภาพจาก MP1-app-graphics-2d.jpg เป็นแนวทางในการวาดรูป แต่จะวาดอย่างไรก็ได้ตามต้องการ
 
 		// TODO:
+		ctx.fillStyle = "skyblue"; 
+		ctx.fillRect(0, 0, config.width, config.height*0.5); // ท้องฟ้า
+
+		ctx.fillStyle = "green"; 
+		ctx.fillRect(0, 300, config.width, config.height*0.5); // พื้นหญ้า
 		
 
 		// เขตสิ้นสุดของการวาดรูป
