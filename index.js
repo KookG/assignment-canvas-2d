@@ -40,7 +40,7 @@ function main(ev) {
 				y,
 				height: 0,
 				maxHeight: 20 + Math.random() * 20, // ความสูงสูงสุดแบบสุ่ม
-				growSpeed: 0.01 + Math.random() * 0.05 // ความเร็วการเติบโตแบบสุ่ม
+				growSpeed: 0.001 + Math.random() * 0.005 // ความเร็วการเติบโตแบบสุ่ม
 			});
 		}
 	}
