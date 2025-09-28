@@ -34,13 +34,13 @@ function main(ev) {
 		for (let i = 0; i < grassLimit; i++) {
 			const x = Math.random() * config.width; // ตำแหน่ง x แบบสุ่ม
 			// ตำแหน่ง y แบบสุ่มในครึ่งล่างของ canvas
-			const y = config.height * 0.5 + Math.random() * (config.height * 0.5 - 20);
+			const y = config.height * 0.6 + Math.random() * (config.height * 0.4 - 20);
 			grassArray.push({
 				x,
 				y,
 				height: 0,
 				maxHeight: 20 + Math.random() * 20, // ความสูงสูงสุดแบบสุ่ม
-				growSpeed: 0.001 + Math.random() * 0.005 // ความเร็วการเติบโตแบบสุ่ม
+				growSpeed: 0.005 + Math.random() * 0.05 // ความเร็วการเติบโตแบบสุ่ม
 			});
 		}
 	}
@@ -62,7 +62,7 @@ function main(ev) {
 			ctx.lineWidth = 2; // ความหนาของเส้นหญ้า
 			ctx.beginPath();
 			ctx.moveTo(grass.x, grass.y); // จุดเริ่มต้นที่ฐานหญ้า
-			ctx.lineTo(grass.x + 5, grass.y - grass.height); // เอียงขวาเล็กน้อย
+			ctx.lineTo(grass.x, grass.y - grass.height); // เอียงขวาเล็กน้อย
 			ctx.stroke();
 			ctx.restore();
 		}
