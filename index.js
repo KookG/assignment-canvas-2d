@@ -242,6 +242,20 @@ function main(ev) {
 		ctx.lineWidth = 2;
 		ctx.strokeRect(600, 400, 50, 50);
 		ctx.restore();
+
+		// เมฆ
+		ctx.save();
+		ctx.fillStyle = "lightgray";
+		ctx.beginPath();
+		ctx.arc(150, 100, 30, 0, Math.PI * 2);
+		ctx.arc(180, 80, 30, 0, Math.PI * 2);
+		ctx.arc(210, 100, 30, 0, Math.PI * 2);
+		ctx.closePath();
+		ctx.fill();
+		ctx.lineWidth = 2;
+		ctx.restore();
+
+		
 		// เขตสิ้นสุดของการวาดรูป
 
 
